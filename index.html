@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>なんでも濁点ジェネレーター</title>
+    <meta property="og:title" content="なんでも濁点ジェネレーター">
+    <meta name="description" content="文゛章゛に゛濁゛点゛を゛大゛量゛に゛入゛れ゛ま゛す゛！゛！゛">
+    <meta property="og:description" content="文゛章゛に゛濁゛点゛を゛大゛量゛に゛入゛れ゛ま゛す゛！゛！゛">
+
+    <link rel="canonical" href="https://jyuren-muryo.pages.dev">
+    <meta property="og:url" content="https://jyuren-muryo.pages.dev">
+
+    <meta property="og:image" content="./images/ogp.png">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#f39800">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.4/css/bulma.min.css" integrity="sha512-yh2RE0wZCVZeysGiqTwDTO/dKelCbS9bP2L94UvOFtl/FKXcNAje3Y2oBg/ZMZ3LS1sicYk4dYVGtDex75fvvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./style.css">
+    <script src="./dakuten.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <h1 class="title has-text-white">なんでも濁点ジェネレーター</h1>
+            <p class="subtitle has-text-white">文゛章゛に゛濁゛点゛を゛大゛量゛に゛入゛れ゛ま゛す゛！゛！゛</p>
+        </div>
+    </section>
+    <div class="app m-6">
+        <h2 class="title is-4">変換してみる</h2>
+        <div class="columns">
+            <div class="column is-half">
+                <label class="label">変換するテキスト</label>
+                <textarea id="before-text" class="textarea is-info"></textarea>
+            </div>
+            <div class="column is-half">
+                <label class="label">変換後テキスト</label>
+                <textarea id="after-text" class="textarea is-danger" readonly></textarea>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="copy" class="button is-danger">
+                <span class="icon">
+                    <i class="fa-solid fa-copy"></i>
+                </span>
+                <span>クリップボードにコピー</span>
+            </button>
+            <button id="share" class="button is-info">
+                <span class="icon">
+                    <i class="fa-solid fa-share-from-square"></i>
+                </span>
+                <span>共有</span>
+            </button>
+            <button id="clear" class="button is-light">
+                <span class="icon">
+                    <i class="fa-solid fa-eraser"></i>
+                </span>
+                <span>クリア</span>
+            </button>
+        
+        </div>
+        <h2 class="title is-4 mt-6">例文で試してみる</h2>
+        <div class="buttons">
+            <button class="button is-link" onclick="conv('じゅうれんむりょう！！')">
+                <span class="icon">
+                    <i class="fa-solid fa-dog"></i>
+                </span>
+                <span>その1</span>
+            </button>
+            <button class="button is-link" onclick="conv('こんなにひどい悪口を言われたの生まれて初めてですっ！')">
+                <span class="icon">
+                    <i class="fa-solid fa-dog"></i>
+                </span>
+                <span>その2</span>
+            </button>
+            <button class="button is-link" onclick="conv('やだぁぁぁぁぁぁぁぁぁぁ！！！')">
+                <span class="icon">
+                    <i class="fa-solid fa-dog"></i>
+                </span>
+                <span>その3</span>
+            </button>
+        </div>
+        <h2 class="title is-4 mt-6">おことわり</h2>
+        <p>このツールは某スマホゲームとは一切関係ありません。<s>じ゛ゅ゛う゛れ゛ん゛む゛り゛ょ゛う゛！゛！゛</s></p>
+    </div>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>なんでも濁点ジェネレーター</strong> by <a href="https://github.com/ogatomo21">@ogatomo21</a><br>
+                <a href="https://x.com/ogatomo21" target="_blank" rel="noopener noreferrer">X(Twitter)</a> | <a href="https://app.adjust.com/1ai6ouao">何とは言わないがアプリへのリンク</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

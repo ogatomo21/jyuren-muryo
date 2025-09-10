@@ -1,0 +1,26 @@
+:root {
+    --bulma-primary-h: 38deg;
+    --bulma-primary-l: 48%;
+    --bulma-link-h: 9deg;
+    --bulma-link-s: 81%;
+    --bulma-link-l: 57%;
+    --bulma-info-h: 210deg;
+    --bulma-info-s: 85%;
+    --bulma-info-l: 52%;
+    --bulma-info-invert-h: 0deg;
+    --bulma-info-invert-s: 0%;
+    --bulma-info-invert-l: 100%;
+    --bulma-success-h: 150deg;
+    --bulma-success-s: 98%;
+    --bulma-success-l: 46%;
+    --bulma-danger-h: 335deg;
+    --bulma-danger-s: 88%;
+    --bulma-danger-l: 58%;
+    --bulma-danger-invert-h: 0deg;
+    --bulma-danger-invert-s: 0%;
+    --bulma-danger-invert-l: 100%;
+    --bulma-family-primary: IBM Plex Sans JP, Arial, sans-serif;
+    --bulma-family-secondary: IBM Plex Sans JP, Arial, sans-serif;
+    --bulma-body-family: IBM Plex Sans JP, Arial, sans-serif;
+}
+
